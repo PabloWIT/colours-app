@@ -57,7 +57,11 @@ class Colours {
     //TODO Write THREE additional functions of your choice that will perform some sort of
     // analysis on the colours list.
 
-    fun coloursEndingWithLetter(letter: Char) : List<String> {
+    fun coloursEndingWithLetter(letter : Char) : List<String> {
         return colours.filter { it.endsWith(letter) }
+    }
+
+    fun colorsWithSubstring(str : String) : List<String> {
+        return colours.filter { it.contains(str) }
     }
 }
