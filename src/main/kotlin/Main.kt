@@ -52,5 +52,5 @@ fun main(args: Array<String>){
     //TODO for the three additional functions you wrote in Colours.kt, print the returned value here.
     println("Colours ending with specific letter ${colours.coloursEndingWithLetter('e')} [ e was chosen ]")
 
-    println("Colours with substring 'el': ${colours.coloursWithSubstring("el")}")
+    println("Colours with substring ${colours.coloursWithSubstring("el")} [ 'el' was chosen ]")
 }
