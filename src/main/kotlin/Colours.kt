@@ -65,5 +65,7 @@ class Colours {
         return colours.filter { it.contains(str) }
     }
 
-
+    fun coloursInvertedOrder() : List<String> {
+        return colours.sortedDescending()
+    }
 }
