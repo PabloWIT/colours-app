@@ -19,28 +19,29 @@ fun main(args: Array<String>){
     //TODO Use String templates i.e. ${} to insert the method calls into the actual println string.
     //TODO tidy up the printing layout so that it is neat and has a nicer UI - you can choose what you would like to do
     //     here, maybe add breaks, lines, tabs, dividers, etc, whatever you think for making it nicer / easier to read.
-    println("The list is: ${colours.getAll()}")
+    println("The list is: ")
+    println("\t${colours.getAll()}\n")
 
 
-    println("The List has ${colours.numberOfColours()} elements stored")
+    println("The List has ${colours.numberOfColours()} elements stored\n")
 
-    println("${colours.firstColour()} is the first colour in the list")
+    println("${colours.firstColour()} is the first colour in the list\n")
 
-    println("${colours.lastColour()} is the last colour in the list")
+    println("${colours.lastColour()} is the last colour in the list\n")
 
     println("Sorted list is: ")
-    println(colours.coloursInAplhabeticOrder())
+    println("\t ${colours.coloursInAplhabeticOrder()}\n")
 
     println("CAPITALISED list is:")
-    println(colours.coloursInAllCapitals())
+    println("\t ${colours.coloursInAllCapitals()}\n")
 
-    println("Colours starting with specific letter ${colours.coloursStartingWithLetter('B')} [ B was chosen ]")
+    println("Colours starting with specific letter ${colours.coloursStartingWithLetter('B')} [ B was chosen ]\n")
 
-    println("Colours with a specific number of chars ${colours.coloursWithSpecificNumberOfChars(6)} [ 6 was chosen]")
+    println("Colours with a specific number of chars ${colours.coloursWithSpecificNumberOfChars(6)} [ 6 was chosen]\n")
 
-    println("${colours.coloursWithLessCharsThan(6)} have less than 6 chars ")
+    println("${colours.coloursWithLessCharsThan(6)} have less than 6 chars\n")
 
-    println("True or false, is blue in the list: ${colours.isColourInTheList("blue")}")
+    println("True or false, is blue in the list: ${colours.isColourInTheList("blue")}\n")
 
     println("The list of colours, each printed on a new line is:")
     //TODO Write Code here (below this comment) to print the list in this format:
@@ -48,9 +49,12 @@ fun main(args: Array<String>){
     //    Colour: Orange
     //    ...
     //    Colour: Silver
-    colours.getAll().forEach { println("Colour: $it") }
+    colours.getAll().forEach { println("\tColour: $it") }
     //TODO for the three additional functions you wrote in Colours.kt, print the returned value here.
-    println("Colours ending with specific letter ${colours.coloursEndingWithLetter('e')} [ e was chosen ]")
+    println("\nColours ending with specific letter ${colours.coloursEndingWithLetter('e')} [ e was chosen ]\n")
 
-    println("Colours with substring ${colours.coloursWithSubstring("el")} [ 'el' was chosen ]")
+    println("Colours with substring ${colours.coloursWithSubstring("el")} [ 'el' was chosen ]\n")
+
+    println("Colours in inverted order: ")
+    println("\t ${colours.coloursInvertedOrder()}")
 }
