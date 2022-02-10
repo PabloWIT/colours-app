@@ -51,4 +51,6 @@ fun main(args: Array<String>){
     colours.getAll().forEach { println("Colour: $it") }
     //TODO for the three additional functions you wrote in Colours.kt, print the returned value here.
     println("Colours ending with specific letter ${colours.coloursEndingWithLetter('e')} [ e was chosen ]")
+
+    println("Colours with substring 'el': ${colours.coloursWithSubstring("el")}")
 }

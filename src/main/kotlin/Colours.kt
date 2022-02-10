@@ -61,7 +61,7 @@ class Colours {
         return colours.filter { it.endsWith(letter) }
     }
 
-    fun colorsWithSubstring(str : String) : List<String> {
+    fun coloursWithSubstring(str : String) : List<String> {
         return colours.filter { it.contains(str) }
     }
 }
