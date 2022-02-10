@@ -29,7 +29,8 @@ class Colours {
 
     fun coloursInAllCapitals() : List<String> {
         //TODO return the colours in ALL CAPS
-        return listOf("this should return colours in all capitals")
+        //https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/uppercase.html
+        return colours.map { it.uppercase() }
     }
 
     fun coloursStartingWithLetter(letter: Char) : List<String> {
